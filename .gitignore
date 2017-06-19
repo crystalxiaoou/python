@@ -54,5 +54,5 @@ MANIFEST
 .pydevproject
 
 # idea
-.idea/*
+.idea/
 *.iml
