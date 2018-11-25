@@ -9,14 +9,14 @@ class LastUpdatedOrderedDict(OrderedDict):
         containsKey = 1 if key in self else 0
         if len(self) - containsKey >= self._capacity:
             last = self.popitem(last=False)
-            print 'remove: ', last
+            print('remove: ', last)
 
         if containsKey:
             del self[key]
-            print 'set:', (key, value)
+            print('set:', (key, value))
 
         else:
-            print 'add:', (key, value)
+            print('add:', (key, value))
         OrderedDict.__setitem__(self, key, value)
 
 t = LastUpdatedOrderedDict(2)
